@@ -1,0 +1,26 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Student_Admission_System"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Student Name: " HorizontalAlignment="Left" Margin="54,32,0,0" VerticalAlignment="Top"/>
+        <Label Content="Date of Birth: " HorizontalAlignment="Left" Margin="54,72,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="stdName" HorizontalAlignment="Left" Margin="176,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167" Cursor=""/>
+        <DatePicker x:Name="datePicker" HorizontalAlignment="Left" Margin="176,74,0,0" VerticalAlignment="Top" Width="167"/>
+        <Label Content="Gender: " HorizontalAlignment="Left" Margin="54,103,0,0" VerticalAlignment="Top" Width="83"/>
+        <RadioButton x:Name="maleBtn" Content="Male" HorizontalAlignment="Left" Margin="176,109,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="FemlaeBtn" Content="Female" HorizontalAlignment="Left" Margin="236,109,0,0" VerticalAlignment="Top"/>
+        <Label Content="Address: " HorizontalAlignment="Left" Margin="54,134,0,0" VerticalAlignment="Top" Width="83"/>
+        <Label Content="Course Name: " HorizontalAlignment="Left" Margin="54,235,0,0" VerticalAlignment="Top" Width="83"/>
+        <TextBox x:Name="address" HorizontalAlignment="Left" Margin="176,138,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="167"  Height="79"/>
+        <ComboBox x:Name="coursesList" HorizontalAlignment="Left" Margin="176,237,0,0" VerticalAlignment="Top" Width="167" IsSynchronizedWithCurrentItem="False" ItemsSource="{Binding Courses}" SelectedItem="(Binding SelectedCourse}"/>
+        <Image x:Name="studentImage" Height="100" Width="100" Margin="460,22,240,312"/>
+        <Label HorizontalAlignment="Left" Margin="54,279,0,0" VerticalAlignment="Top" Width="92" Content="Student Image: "/>
+        <Button x:Name="fileButton" Content="Select Image" HorizontalAlignment="Left" Margin="176,279,0,0" VerticalAlignment="Top" Width="167"/>
+
+    </Grid>
+</Window>
