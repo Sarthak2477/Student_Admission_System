@@ -13,7 +13,7 @@
         <DatePicker x:Name="datePicker" HorizontalAlignment="Left" Margin="176,74,0,0" VerticalAlignment="Top" Width="167"/>
         <Label Content="Gender: " HorizontalAlignment="Left" Margin="54,103,0,0" VerticalAlignment="Top" Width="83"/>
         <RadioButton x:Name="maleBtn" Content="Male" HorizontalAlignment="Left" Margin="176,109,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="FemlaeBtn" Content="Female" HorizontalAlignment="Left" Margin="236,109,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="femaleBtn" Content="Female" HorizontalAlignment="Left" Margin="236,109,0,0" VerticalAlignment="Top"/>
         <Label Content="Address: " HorizontalAlignment="Left" Margin="54,134,0,0" VerticalAlignment="Top" Width="83"/>
         <Label Content="Course Name: " HorizontalAlignment="Left" Margin="54,235,0,0" VerticalAlignment="Top" Width="83"/>
         <TextBox x:Name="address" HorizontalAlignment="Left" Margin="176,138,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="167"  Height="79"/>
@@ -21,6 +21,7 @@
         <Image x:Name="studentImage" Height="100" Width="100" Margin="460,22,240,312"/>
         <Label HorizontalAlignment="Left" Margin="54,279,0,0" VerticalAlignment="Top" Width="92" Content="Student Image: "/>
         <Button x:Name="fileButton" Content="Select Image" HorizontalAlignment="Left" Margin="176,279,0,0" VerticalAlignment="Top" Width="167"/>
+        <Button x:Name="submit_btn" Content="Submit Application" HorizontalAlignment="Left" Margin="54,360,0,0" VerticalAlignment="Top" Width="167"/>
 
     </Grid>
 </Window>
